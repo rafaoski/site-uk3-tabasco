@@ -1,5 +1,5 @@
 <?php namespace ProcessWire;?>
-<div class="uk-padding-small" data-uk-grid>
+<div class="uk-grid-small" data-uk-grid>
 
 <?php
 $info = ['Display Data', 'Users', 'Sales', 'Coffe Cups' ];
@@ -12,8 +12,9 @@ $info_text = [
   '4 Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
 ];
 foreach ($info as $key => $item): ?>
-  <div class='uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l'>
-    <a class='uk-link-reset hover uk-text-left uk-padding-small uk-button uk-button-text' href="#">
+<div class='uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l'>
+  <div class='uk-card uk-card-body uk-card-default uk-card-hover'>
+    <a class='not-hover uk-link-reset uk-text-left uk-button uk-button-text' href="#">
           <?=ukIcon($icons[$key],['ratio' => 2.2, 'class'=> 'uk-text-warning']); ?>
           <h3 class="uk-margin-small uk-h4">
             <?= $item ?>
@@ -22,6 +23,7 @@ foreach ($info as $key => $item): ?>
           <p class="uk-margin-left uk-text-lowercase"><?= $info_text[$key] ?></p>
      </a>
   </div>
+</div>
 <?php endforeach; ?>
 
 </div>

@@ -29,6 +29,7 @@ $sections = [
 	'team',
 	'info',
 	'testimonials',
+	'price',
 	'subscribe'
 ];
 // Start Sections Loop
